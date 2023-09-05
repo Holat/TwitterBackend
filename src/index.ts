@@ -7,7 +7,7 @@ app.use(express.json());
 app.use("/user", userRoutes);
 app.use("/tweet", tweetRoutes);
 
-// app.METHOD(PATH< HANDLER)
+// app.METHOD(PATH, HANDLER)
 app.get("/", (req: string, res: any) => {
   res.send("Hello world");
 });
